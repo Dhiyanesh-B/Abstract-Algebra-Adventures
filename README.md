@@ -91,5 +91,9 @@ The following operations are supported via the ops dictionary:
 - cyclic(tset, opr, mod): Identifies cyclic generators
 - identity(tset, opr, mod): Finds the identity element
 
+## Team Members
+1. Dhiyanesh B
+2. [Dipankar T V](https://github.com/dipankar272)
+
 ---
 ⭐ **If you like this project, give it a star!** ⭐
