@@ -34,7 +34,7 @@ This Python project provides a comprehensive tool for analyzing algebraic struct
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/[repository-name].git
+git clone https://github.com/Dhiyanesh-B/Abstract-Algebra-Adventures.git
 ```
 Or download the ZIP and extract it.
 
