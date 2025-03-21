@@ -39,21 +39,19 @@ git clone https://github.com/[your-username]/[repository-name].git
 Or download the ZIP and extract it.
 
 ## Usage
-# Import the necessary functions
-from algebraic_analyzer import *
 
-# Example: Check if a set forms a group under addition modulo 4
+### Example: Check if a set forms a group under addition modulo 4
 tset = [0, 1, 2, 3]
 is_group(tset, '+', 4)  # Returns 1 if it's a group, 0 if not
 
-# Example: Check if a set forms a ring
+### Example: Check if a set forms a ring
 tset = [0, 1, 2, 3]
 is_ring(tset, '+', '*', 4, 4)  # Checks ring properties with addition and multiplication
 
-# Example: Find subgroups
+### Example: Find subgroups
 subgroup(tset, '+', 4)  # Returns list of all subgroups
 
-# Working with matrices
+### Working with matrices
 matrix_set = [
     [1, 0],  # Identity matrix
     [0, 1],
@@ -61,19 +59,19 @@ matrix_set = [
     [0, 0]   # Zero matrix
 ]
 
-# Check if matrices form a group under addition
+### Check if matrices form a group under addition
 group_result = is_group(matrix_set, '+', 2)  # Modulo 2 addition
 print("Matrices form group:", bool(group_result))
 
-# Check if matrices form a ring
+### Check if matrices form a ring
 ring_result = is_ring(matrix_set, '+', '*', 2, 2)  # Addition and multiplication mod 2
 print("Matrices form ring:", bool(ring_result))
 
-# Find identity element
+### Find identity element
 identity_elem = identity(matrix_set, '+', 2)
 print("Identity element:", identity_elem)
 
-# Supported Operations
+## Supported Operations
 The following operations are supported via the ops dictionary:
 
 - +: Addition
@@ -83,7 +81,7 @@ The following operations are supported via the ops dictionary:
 - %: Modulus
 - ^: XOR
 
-# Key Functions
+## Key Functions
 - is_group(tset, opr, mod): Checks if a set forms a group
 - is_ring(tset, opr1, opr2, mod1, mod2): Checks if a set forms a ring
 - subgroup(tset, opr, mod): Finds all subgroups
